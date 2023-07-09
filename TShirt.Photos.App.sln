@@ -1,20 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Domain", "src\TShirt.Photos.App.Domain\TShirt.Photos.App.Domain.csproj", "{429B938A-F8D1-4109-A60D-E5667DECA644}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Infra.Data", "src\TShirt.Photos.App.Infra.Data\TShirt.Photos.App.Infra.Data.csproj", "{B3B04551-AEDD-4AAF-9525-8E23C730145B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Application", "src\TShirt.Photos.App.Application\TShirt.Photos.App.Application.csproj", "{FF374E3D-1D1E-48F9-92DE-1AF09AEA8213}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Infra.Web", "src\TShirt.Photos.App.Infra.Web\TShirt.Photos.App.Infra.Web.csproj", "{DE7F9785-3856-42A4-978D-4A86C0274582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Contracts.Web", "src\TShirt.Photos.App.Contracts.Web\TShirt.Photos.App.Contracts.Web.csproj", "{37B0D994-5157-41AD-AC85-609BC8512709}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6075233E-B59D-4512-820B-2CACDD0AC36B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{07E2DDFD-2CFC-4DCB-AFE5-3B1A334D975D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{891E30A0-578A-46C4-B068-A4BAE993A307}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TShirt.Photos.App.Domain", "src\TShirt.Photos.App.Domain\TShirt.Photos.App.Domain.csproj", "{8423C711-868A-4A04-A1FC-3DE169FEBA21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6D42F3DE-2E6C-4DD3-8E6E-DDABED4DB51A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{429B938A-F8D1-4109-A60D-E5667DECA644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{429B938A-F8D1-4109-A60D-E5667DECA644}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{429B938A-F8D1-4109-A60D-E5667DECA644}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{429B938A-F8D1-4109-A60D-E5667DECA644}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B3B04551-AEDD-4AAF-9525-8E23C730145B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B3B04551-AEDD-4AAF-9525-8E23C730145B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3B04551-AEDD-4AAF-9525-8E23C730145B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,16 +32,15 @@ Global
 		{DE7F9785-3856-42A4-978D-4A86C0274582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE7F9785-3856-42A4-978D-4A86C0274582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE7F9785-3856-42A4-978D-4A86C0274582}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37B0D994-5157-41AD-AC85-609BC8512709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37B0D994-5157-41AD-AC85-609BC8512709}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37B0D994-5157-41AD-AC85-609BC8512709}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37B0D994-5157-41AD-AC85-609BC8512709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8423C711-868A-4A04-A1FC-3DE169FEBA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8423C711-868A-4A04-A1FC-3DE169FEBA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8423C711-868A-4A04-A1FC-3DE169FEBA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8423C711-868A-4A04-A1FC-3DE169FEBA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FF374E3D-1D1E-48F9-92DE-1AF09AEA8213} = {07E2DDFD-2CFC-4DCB-AFE5-3B1A334D975D}
-		{429B938A-F8D1-4109-A60D-E5667DECA644} = {07E2DDFD-2CFC-4DCB-AFE5-3B1A334D975D}
-		{37B0D994-5157-41AD-AC85-609BC8512709} = {891E30A0-578A-46C4-B068-A4BAE993A307}
 		{B3B04551-AEDD-4AAF-9525-8E23C730145B} = {6075233E-B59D-4512-820B-2CACDD0AC36B}
 		{DE7F9785-3856-42A4-978D-4A86C0274582} = {6075233E-B59D-4512-820B-2CACDD0AC36B}
+		{8423C711-868A-4A04-A1FC-3DE169FEBA21} = {6D42F3DE-2E6C-4DD3-8E6E-DDABED4DB51A}
 	EndGlobalSection
 EndGlobal
