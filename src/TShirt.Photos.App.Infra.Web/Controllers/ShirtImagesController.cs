@@ -39,10 +39,10 @@ public class ShirtImagesController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> CreateAsync([FromForm] IFormFile file,
         [FromRoute] int id,
-        [FromQuery] int colorId,
+        [FromQuery] int colourId,
         [FromQuery] int fabricId)
     {
-        var imageDto = new ShirtImageDTO(null, id, colorId, fabricId);
+        var imageDto = new ShirtImageDTO(null, id, colourId, fabricId);
         var result = await _imageService.CreateImageAsync(imageDto, file);
 
         if (result.IsSuccess)

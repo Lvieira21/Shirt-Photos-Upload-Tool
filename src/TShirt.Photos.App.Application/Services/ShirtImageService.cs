@@ -56,18 +56,18 @@ public class ShirtImageService : IShirtImageService
             return ResultService.Fail<ShirtImage>("Image not provided");
         }
 
-        var validations = new ShirtImageDTOValidator().Validate(shirtImageDto);
-
-        if (!validations.IsValid)
-        {
-            return ResultService.RequestError<ShirtImage>("Validation Errors", validations);
-        }
-
         var shirt = await _shirtRepository.GetByIdAsync(shirtImageDto.ShirtId);
 
         if (shirt is null)
         {
             return ResultService.Fail<ShirtImage>("Shirt not found!");
+        }
+
+        var validations = new ShirtImageDTOValidator().Validate(new ValidatorInput(shirtImageDto, shirt));
+
+        if (!validations.IsValid)
+        {
+            return ResultService.RequestError<ShirtImage>("Validation Errors", validations);
         }
 
         var shirtImageUrl = _imageHelper.SaveFile(file);

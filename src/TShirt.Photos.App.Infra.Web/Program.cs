@@ -1,4 +1,3 @@
-using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json.Serialization;
 using TShirt.Photos.App.Application;
 using TShirt.Photos.App.Infra.Data;
